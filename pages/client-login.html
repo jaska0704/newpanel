@@ -18,14 +18,23 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <script defer src="../Js/userlogin.js"></script>
+    <script defer src="../Js/client-login.js"></script>
     
     <title>Document</title>
 </head>
 <body>
      <div class="container">
-      <h1 class="display-3 text-center">Login to System</h1>
+      <h1 class="display-3 text-center">Registor to System</h1>
       <form id="login-form" class="d-grid gap-3">
+        <div>
+          <label for="number">Your Name: </label>
+          <input
+            type="text"
+            id="name"
+            class="form-control"
+            placeholder="Name"
+          />
+        </div>
         <div>
           <label for="number">Your Number: </label>
           <input
@@ -44,6 +53,16 @@
             id="password"
             class="form-control"
             placeholder="Password"
+          />
+        </div>
+        <div>
+          <label for="password">Password: </label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="form-control"
+            placeholder="Retype the password"
           />
         </div>
         <button class="btn btn-success d-block w-100">Login</button>

@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       },
     }
   );
-
+  console.log(products);
    products.forEach((element, index) => {
      let tr = document.createElement("tr");
      tr.innerHTML = `
