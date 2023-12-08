@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"
+      integrity="sha512-b94Z6431JyXY14iSXwgzeZurHHRNkLt9d6bAHt7BZT38eqV+GyngIi/tVye4jBKPYQ2lBdRs0glww4fmpuLRwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script defer src="../Js/userlogin.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+     <div class="container">
+      <h1 class="display-3 text-center">Login to System</h1>
+      <form id="login-form" class="d-grid gap-3">
+        <div>
+          <label for="number">Your Username: </label>
+          <input
+            type="tel"
+            name="number"
+            id="number"
+            class="form-control"
+            placeholder="Phone Number"
+          />
+        </div>
+        <div>
+          <label for="password">Your Password: </label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="form-control"
+            placeholder="Password"
+          />
+        </div>
+        <button class="btn btn-success d-block w-100">Login</button>
+      </form>
+    </div>
+</body>
+</html>

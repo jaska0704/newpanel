@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: bisque;
+    font-size: 27px;
+    font-family:'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    &:hover {
+        text-shadow: 6px -4px 5px black;
+        text-decoration: dotted;
+    }
+}
+
+.page {
+    background-color: rgb(94, 135, 135);
+    width: 600px;
+    height: 300px;
+    border-radius: 20px;
+    margin-top: 200px;
+    box-shadow: 0px 0px 12px 6px rgb(126, 126, 226);
+}

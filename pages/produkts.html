@@ -40,14 +40,16 @@
       </div>
       <div class="modal-body">
         <form id="form1">
-          <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Name:</label>
+          
+          <div class="d-flex gap-5">
+            <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Name uz:</label>
             <input type="text" class="form-control" id="recipient-name">
           </div>
-
           <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Meta:</label>
+            <label for="recipient-name" class="col-form-label">Name ru:</label>
             <input type="text" class="form-control" id="recipient-name">
+          </div>
           </div>
 
           <div class="mb-3">
@@ -55,14 +57,30 @@
             <input type="number" class="form-control" id="message-text"></input>
           </div>
 
-          <div class="mb-3">
-            <label for="message-text" class="col-form-label">Color:</label>
-            <input type="color" class="form-control" id="message-text"></input>
+          <div class="d-flex gap-5">
+            <div class="mb-3">
+            <label for="message-text" class="col-form-label">Color uz:</label>
+            <input type="text" class="form-control" id="message-text"></input>
           </div>
 
           <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Description:</label>
+            <label for="message-text" class="col-form-label">Color ru:</label>
+            <input type="text" class="form-control" id="message-text"></input>
+          </div>
+
+          </div>
+
+          <div class="d-flex gap-5">
+            <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Description uz:</label>
             <input type="text" class="form-control" id="recipient-name">
+          </div>
+
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Description ru:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+
           </div>
 
           <div class="mb-3">
@@ -71,12 +89,9 @@
           </div>
 
           <div class="mb-3">
-            <label for="message-text" class="col-form-label">Category:</label>
-            <select class="form-select" aria-label="Default select example">
-                <option selected>Hous</option>
-                <option value="1">Avto</option>
-                <option value="2">Laptop</option>
-                <option value="3">Phone</option>
+            <label for="category" class="col-form-label">Category:</label>
+            <select class="form-select my-2" aria-label="Default select example" id="category">Category
+                <option value="" selected disabled>Categoryni tanlang</option>
             </select>
           </div>
         </form>
@@ -98,11 +113,16 @@
         </form>
       </header>
     </div>
-    <div class="div d-flex h-100 bg-danger">
-      <div class="menu w-25 d-flex flex-column gap-xl-5 fs-2  align-items-center">
-      <a class="text-decoration-none text-dark" href="/pages/panel.html">Users</a>
-      <a class="text-decoration-none text-dark" href="/pages/products.html">Users</a>
-      <a class="text-decoration-none text-dark" href="/pages/order.html">Users</a>
+    <div class="div d-flex h-100">
+      <div class="menu bg-danger w-25 d-flex flex-column gap-xl-5 fs-2 justify-content-between">
+          <div class="d-flex flex-column gap-lg-5">
+            <a class="text-decoration-none text-dark" href="/pages/panel.html">Users</a>
+            <a class="text-decoration-none text-dark" href="#">Products</a>
+            <a class="text-decoration-none text-dark" href="../pages/category.html">Category</a>
+          </div>
+          <div>
+            <a href="../pages/userlogin.html">Logout</a>
+          </div>
     </div>
     <div class="w-75">
       <table class="table">

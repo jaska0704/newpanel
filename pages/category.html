@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"
+      integrity="sha512-b94Z6431JyXY14iSXwgzeZurHHRNkLt9d6bAHt7BZT38eqV+GyngIi/tVye4jBKPYQ2lBdRs0glww4fmpuLRwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script defer src="../Js/category.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body class="d-flex bg-primary-subtle h-100">
+    <div
+      class="menu bg-danger w-25 h-100 d-flex flex-column gap-xl-5 fs-2 justify-content-between"
+    >
+      <div class="d-flex flex-column gap-lg-5">
+        <a class="text-decoration-none text-dark" href="../pages/panel.html"
+          >Users</a
+        >
+        <a class="text-decoration-none text-dark" href="../pages/produkts.html">Products</a>
+        <a class="text-decoration-none text-dark" href="#"
+          >Category</a
+        >
+      </div>
+      <div>
+        <a href="../pages/userlogin.html">Logout</a>
+      </div>
+    </div>
+    <div class="w-75">
+      <div class="container">
+        <h1 class="display-3 text-center">Categories</h1>
+        <form id="login-form" class="d-grid gap-3">
+          <div>
+            <label for="number">Uz: </label>
+            <input
+              type="text"
+              id="categoryUz"
+              class="form-control"
+              placeholder=""
+            />
+          </div>
+          <div>
+            <label for="">Ru: </label>
+            <input
+              type="text"
+              id="categoryRu"
+              class="form-control"
+              placeholder=""
+            />
+          </div>
+          <div>
+            <label for="catagoryImg">Img</label>
+            <input class="form-control my-3" type="url" id="catagoryImg" />
+          </div>
+          <button class="btn btn-success d-block w-100">Creat</button>
+        </form>
+
+        <div class="container mt-xl-5">
+          <table class="table table-bordered table-hover table-dark">
+            <thead>
+              <tr>
+                <th>Uzbek</th>
+                <th>Russian</th>
+                <th style="width: 150px">Img</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
