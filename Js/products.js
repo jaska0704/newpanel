@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   let button = document.querySelector(".button1");
   let tbody = document.querySelector("tbody");
   let select = document.querySelector("select");
+  let logout = document.querySelector(".logout")
 
   button.addEventListener("click", async (e) => {
     e.preventDefault();

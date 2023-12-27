@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       });
       form.reset();
 
-      localStorage.setItem("token", token);
+      localStorage.setItem("clienttoken", token);
       console.log(token);
-      window.location.replace("/pages/produkts.html");
+      window.location.replace("/pages/client.html");
   });
 });
